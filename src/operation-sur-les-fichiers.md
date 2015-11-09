@@ -15,4 +15,4 @@
 ###Afficher les *n* dernières lignes d'un fichier
 **tail** *-n* fichier
 ###Renommer ou déplacer un fichier
-**mv** ancien-nom nouveau-nom
+**mv** source destination
