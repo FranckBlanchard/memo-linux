@@ -17,7 +17,8 @@ Dépot contenant des aides mémoires sur Linux
 ###Afficher les *n* dernières lignes d'un fichier
 **tail** *-n* fichier
 ###Renommer ou déplacer un fichier
-**mv** ancien-nom nouveau-nom##Opérations sur les répertoires
+**mv** ancien-nom nouveau-nom
+##Opérations sur les répertoires
 ###Créer un répertoire
 **mkdir** *répertoire*
 ###Effacer un répertoire
