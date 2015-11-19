@@ -1,9 +1,9 @@
-# memo-linux
-Dépot contenant des aides mémoires sur Linux.
+# Memo Linux
+Aide mémoire sur les commandes **Linux**.
 
-Les exemples cités dans ce document ne sont que des exemples, pour avoir plus d'information se référer au pages du manuel de la commande, ou a l'aide en ligne.
+Pour obtenir plus d'information sur une commande, se référer au pages du manuel de celle-ci, ou a l'aide en ligne.
 
-## Pour obtenir plus d'information sur une commande faire
+## Pour obtenir de d'information sur une commande
 **man** commande
 
 Pour la majoritée des commandes il est possible d'afficher de l'aide directement depuis la commande en faisant:
