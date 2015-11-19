@@ -1,0 +1,12 @@
+{
+  "authors": [
+        {
+            "name": "Franck blanchard",
+            "email": "info@aztequemedia.com",            
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "michelf/php-markdown": "^1.5"
+    }
+}
