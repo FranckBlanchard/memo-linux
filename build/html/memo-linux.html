@@ -63,5 +63,20 @@
 <p><strong>tar</strong> <em>-ztvf</em> archive.tar.gz</p>
 <h3>Extraire les fichiers d'une archive créé avec <em>tar</em>.</h3>
 <p><strong>tar</strong> <em>-xzvf</em> archive.tar.gz</p>
+<h2>Opération sur les Utilisateurs</h2>
+<p>Les commandes suivantes doivent être invoquées avec les droits d'administration.</p>
+<h3>Ajouter un compte utilisateur</h3>
+<p>Il est impératif de consulter le manuel pour les options.</p>
+<p><strong>useradd</strong> <em>[option]</em> identifiant</p>
+<h3>Supprimer un compte utilisateur</h3>
+<p><strong>userdel</strong> utilisateur</p>
+<h3>Supprimer un compte utilisateur et son répertoire personel</h3>
+<p><strong>userdel</strong> <em>-r</em> utilisateur</p>
+<h4>Note</h4>
+<p>Le fichier <em>/etc/group</em> ne sera pas modifié, il faut supprimer les entrées concernant
+l'utilisateur manuellement.</p>
+<h3>Modifier un compte utilisateur</h3>
+<p>Les options varient en fonction des informations a modifier, consulter le manuel avant son utilisation.</p>
+<p><strong>usermod</strong> <em>[option]</em> identifiant</p>
 </body>
 </html>
