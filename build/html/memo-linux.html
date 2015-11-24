@@ -1,82 +1,168 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!DOCTYPE html>
 <html>
-<head>
-<meta http-equiv="content-type" content="text/html; charset=utf-8">
-<meta name="generator" content="ReText 4.1.2">
-<title>README</title>
-</head>
-<body>
-<h1>Memo Linux</h1>
-<p>Aide mémoire sur les commandes <strong>Linux</strong>.</p>
-<p>Pour obtenir plus d'information sur une commande, se référer au pages du manuel de celle-ci, ou a l'aide en ligne.</p>
+    <head>
+        <title>Memo Linux</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    </head>
+    <body>
+        <h1>Memo Linux</h1>
+        <p>Date de compilation du document: 2015-11-23 19:59:49.</p>
+        <p>La dernière version du document peut être trouvée a l'adresse suivante : <a href="https://github.com/FranckBlanchard/Memo-linux" target="_blank">https://github.com/FranckBlanchard/Memo-linux</a></p>            
+        <p>Pour obtenir plus d'information sur une commande, se référer aux pages du manuel de celle-ci, ou a l'aide en ligne.</p>
+
 <h2>Pour obtenir de d'information sur une commande</h2>
+
 <p><strong>man</strong> commande</p>
+
 <p>Pour la majoritée des commandes il est possible d'afficher de l'aide directement depuis la commande en faisant:</p>
+
 <p><strong>commande</strong> <em>--help</em></p>
+
 <h2>Opération sur les fichiers.</h2>
+
 <h3>Créer un fichier.</h3>
+
 <p><strong>touch</strong> fichier</p>
+
 <h3>Supprimer un fichier.</h3>
+
 <p><strong>rm</strong> fichier</p>
+
 <h3>Copier un fichier.</h3>
+
 <p><strong>cp</strong> fichier1 fichier2</p>
+
 <h3>Afficher un fichier.</h3>
+
 <p><strong>cat</strong> fichier</p>
+
 <h3>Afficher un fichier avec un pager</h3>
-<p><strong>less</strong> fichier</p>
-<p><strong>more</strong> fichier</p>
+
+<p><strong>less</strong> fichier
+<strong>more</strong> fichier</p>
+
 <h3>Afficher les <em>n</em> premières lignes d'un fichier</h3>
+
 <p><strong>head</strong> <em>-n</em> fichier</p>
+
 <h3>Afficher les <em>n</em> dernières lignes d'un fichier</h3>
+
 <p><strong>tail</strong> <em>-n</em> fichier</p>
+
 <h3>Renommer ou déplacer un fichier</h3>
+
 <p><strong>mv</strong> source destination</p>
+
 <h2>Opération sur les répertoires</h2>
+
 <h3>Créer un répertoire</h3>
+
 <p><strong>mkdir</strong> répertoire</p>
+
 <h3>Effacer un répertoire vide</h3>
+
 <p><strong>rmdir</strong> répertoire</p>
+
 <h3>Effacer un répertoire de façon récurçive</h3>
+
 <p><strong>rm</strong> <em>-r</em> répertoire</p>
+
 <h3>Afficher les fichiers du répertoire courant</h3>
+
 <p><strong>ls</strong></p>
+
 <h3>Afficher les fichiers du répertoire courant au format long</h3>
+
 <p><strong>ls</strong> <em>-l</em></p>
+
 <h3>Afficher les fichiers du répertoire courant au format long ainsi que les fichiers cachés</h3>
+
 <p><strong>ls</strong> <em>-la</em></p>
+
 <h3>Afficher le répertoire courant</h3>
+
 <p><strong>pwd</strong></p>
+
 <h3>Changer de répertoire</h3>
+
 <p><strong>cd</strong> repertoire</p>
+
 <h3>Se positionner dans le répertoire parent</h3>
+
 <p><strong>cd</strong> ..</p>
+
 <h3>Se positionner à la racine du répertoire de l'utilisateur courant</h3>
+
 <p><strong>cd</strong> ~</p>
+
 <h3>Changer</h3>
+
 <h3>Renommer ou déplacer un répertoire</h3>
+
 <p><strong>mv</strong> source destination</p>
+
 <h2>Opération sur les archives.</h2>
+
 <h3>Créer une archive avec tar</h3>
+
 <p>Créer l'archive compréssé <em>archive.tar.gz</em> en utilisant le programme gzip, de tous les fichiers contenus dans le répertoire <em>documents</em>.</p>
+
 <p><strong>tar</strong> <em>-zcvf</em>  archive.tar.gz  /documents</p>
+
 <h3>Afficher le contenu d'une archive créé avec <em>tar</em>.</h3>
+
 <p><strong>tar</strong> <em>-ztvf</em> archive.tar.gz</p>
+
 <h3>Extraire les fichiers d'une archive créé avec <em>tar</em>.</h3>
+
 <p><strong>tar</strong> <em>-xzvf</em> archive.tar.gz</p>
+
 <h2>Opération sur les Utilisateurs</h2>
+
 <p>Les commandes suivantes doivent être invoquées avec les droits d'administration.</p>
+
 <h3>Ajouter un compte utilisateur</h3>
+
 <p>Il est impératif de consulter le manuel pour les options.</p>
+
 <p><strong>useradd</strong> <em>[option]</em> identifiant</p>
+
 <h3>Supprimer un compte utilisateur</h3>
+
 <p><strong>userdel</strong> utilisateur</p>
+
 <h3>Supprimer un compte utilisateur et son répertoire personel</h3>
+
 <p><strong>userdel</strong> <em>-r</em> utilisateur</p>
+
 <h4>Note</h4>
+
 <p>Le fichier <em>/etc/group</em> ne sera pas modifié, il faut supprimer les entrées concernant
 l'utilisateur manuellement.</p>
+
 <h3>Modifier un compte utilisateur</h3>
+
 <p>Les options varient en fonction des informations a modifier, consulter le manuel avant son utilisation.</p>
+
 <p><strong>usermod</strong> <em>[option]</em> identifiant</p>
-</body>
+
+<h2>Copyright et license</h2>
+
+<p>Memo-Linux Copyright (c) 2015 Franck Blanchard</p>
+
+<p>All rights reserved.</p>
+
+<p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
+
+<pre><code>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+
+Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+</code></pre>
+
+<p>This software is provided by the copyright holders and contributors "as is" and any express or implied warranties, including, but not limited to, the implied warranties of merchantability and fitness for a particular purpose are disclaimed. In no event shall the copyright owner or contributors be liable for any direct, indirect, incidental, special, exemplary, or consequential damages (including, but not limited to, procurement of substitute goods or services; loss of use, data, or profits; or business interruption) however caused and on any theory of liability, whether in contract, strict liability, or tort (including negligence or otherwise) arising in any way out of the use of this software, even if advised of the possibility of such damage.</p>
+
+    </body>
 </html>

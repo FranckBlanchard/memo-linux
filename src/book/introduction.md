@@ -1,5 +1,5 @@
 
-Pour obtenir plus d'information sur une commande, se référer au pages du manuel de celle-ci, ou a l'aide en ligne.
+Pour obtenir plus d'information sur une commande, se référer aux pages du manuel de celle-ci, ou a l'aide en ligne.
 
 ## Pour obtenir de d'information sur une commande
 **man** commande
