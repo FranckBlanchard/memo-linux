@@ -9,7 +9,7 @@
     </head>
     <body>
         <h1>Memo Linux</h1>
-        <p>Date de compilation du document: 2015-11-23 19:59:49.</p>
+        <p>Date de compilation du document: 2015-11-24 16:59:10.</p>
         <p>La dernière version du document peut être trouvée a l'adresse suivante : <a href="https://github.com/FranckBlanchard/Memo-linux" target="_blank">https://github.com/FranckBlanchard/Memo-linux</a></p>            
         <p>Pour obtenir plus d'information sur une commande, se référer aux pages du manuel de celle-ci, ou a l'aide en ligne.</p>
 
@@ -148,6 +148,44 @@ l'utilisateur manuellement.</p>
 <p>Les options varient en fonction des informations a modifier, consulter le manuel avant son utilisation.</p>
 
 <p><strong>usermod</strong> <em>[option]</em> identifiant</p>
+
+<h2>Opération sur le réseau.</h2>
+
+<h3>Carte réseau</h3>
+
+<p><strong>ifconfig</strong> permet de gérer les cartes réseaux.</p>
+
+<p>Afficher les cartes réseaux disponibles.</p>
+
+<p><strong>ifconfig</strong></p>
+
+<h3>Les routes.</h3>
+
+<p>La commande <strong>route</strong> permet de gérer les routes du noyau.</p>
+
+<p>Affiche la table de routage du noyau.</p>
+
+<p><strong>route</strong></p>
+
+<h3>Tester le réseau.</h3>
+
+<p>Vérifie 10 fois si un client réseau est disponible.</p>
+
+<p><strong>Note :</strong> attention le client peut être configurer pour ne pas répondre a un ping</p>
+
+<p><strong>ping</strong> <em>-c 10</em>  google.ca</p>
+
+<p>Affiche la route d'un paquet pour arriver a une adresse.</p>
+
+<p><strong>traceroute</strong>  google.com</p>
+
+<p>Affiche la correspondance entre <em>adresse ip</em> et <em>mac adresse</em></p>
+
+<p><strong>arp</strong> <em>-an</em></p>
+
+<p>Affiche les connexions ainsi que les processus correspondant. La commande <strong>netstat</strong> possède beaucoup d'options, voir la documentation en ligne.</p>
+
+<p><strong>netstat</strong> <em>-nap</em></p>
 
 <h2>Copyright et license</h2>
 
