@@ -91,6 +91,26 @@ l'utilisateur manuellement.
 Les options varient en fonction des informations a modifier, consulter le manuel avant son utilisation.
 
 **usermod** *[option]* identifiant
+## Opération sur le système
+### Système **Debian** et dérivé
+#### Mettre à jour la liste des paquets disponibles
+
+**apt-get** *update*
+
+#### Mettre à jour son système
+
+**apt-get** *upgrade*
+#### Installation d'un paquet
+
+**apt-get** *install* paquet
+
+#### Déinstallation d'un paquet
+
+**apt-get** *remove* paquet
+
+Pour supprimer les fichiers de configution.
+
+**apt-get** *--purge remove* paquet
 ## Opération sur le réseau.
 ### Carte réseau
 **ifconfig** permet de gérer les cartes réseaux.
