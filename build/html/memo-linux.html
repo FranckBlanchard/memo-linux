@@ -9,7 +9,7 @@
     </head>
     <body>
         <h1>Memo Linux</h1>
-        <p>Date de compilation du document: 2015-12-01 17:59:42.</p>
+        <p>Date de compilation du document: 2015-12-02 16:36:13.</p>
         <p>La dernière version du document peut être trouvée a l'adresse suivante : <a href="https://github.com/FranckBlanchard/Memo-linux" target="_blank">https://github.com/FranckBlanchard/Memo-linux</a></p>            
         <p>Pour obtenir plus d'information sur une commande, se référer aux pages du manuel de celle-ci, ou a l'aide en ligne.</p>
 
@@ -165,13 +165,23 @@ l'utilisateur manuellement.</p>
 
 <p><strong>apt-get</strong> <em>install</em> paquet</p>
 
+<p><strong>dpkg</strong> <em>-i</em> paquet</p>
+
 <h4>Déinstallation d'un paquet</h4>
 
 <p><strong>apt-get</strong> <em>remove</em> paquet</p>
 
+<p><strong>dpkg</strong> <em>-r</em> paquet</p>
+
 <p>Pour supprimer les fichiers de configution.</p>
 
 <p><strong>apt-get</strong> <em>--purge remove</em> paquet</p>
+
+<p><strong>dpkg</strong> <em>-P</em> paquet</p>
+
+<h4>Afficher la liste des paquets installés</h4>
+
+<p><strong>dpkg</strong> --get-selections | less</p>
 
 <h2>Opération sur le réseau.</h2>
 
