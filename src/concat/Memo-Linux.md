@@ -113,7 +113,7 @@ Les options varient en fonction des informations a modifier, consulter le manuel
 
 **dpkg** *-r* paquet
 
-Pour supprimer les fichiers de configution.
+Pour supprimer les fichiers de configuration.
 
 **apt-get** *--purge remove* paquet
 

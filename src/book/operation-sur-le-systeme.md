@@ -20,7 +20,7 @@
 
 **dpkg** *-r* paquet
 
-Pour supprimer les fichiers de configution.
+Pour supprimer les fichiers de configuration.
 
 **apt-get** *--purge remove* paquet
 
