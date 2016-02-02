@@ -4,7 +4,7 @@
 
 **apt-get** *update*
 
-#### Mettre à jour son système
+#### Mettre à jour les paquets déjà installé
 
 **apt-get** *upgrade*
 
@@ -29,3 +29,11 @@ Pour supprimer les fichiers de configuration.
 #### Afficher la liste des paquets installés
 
 **dpkg** --get-selections | less
+
+#### Recherche d'une chaînes de caractères «chaine» dans les paquets connus.
+
+**apt-cache** search chaîne
+
+#### Recherche d'une chaînes de caractères «chaine» dans le nom d'un paquet.
+
+**apt-cache** showpkg chaîne

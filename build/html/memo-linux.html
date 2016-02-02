@@ -9,7 +9,7 @@
     </head>
     <body>
         <h1>Memo Linux</h1>
-        <p>Date de compilation du document: 2016-01-29 11:18:10.</p>
+        <p>Date de compilation du document: 2016-02-01 20:04:34.</p>
         <p>La dernière version du document peut être trouvée a l'adresse suivante : <a href="https://github.com/FranckBlanchard/Memo-linux" target="_blank">https://github.com/FranckBlanchard/Memo-linux</a></p>            
         <p>Pour obtenir plus d'information sur une commande, se référer aux pages du manuel de celle-ci, ou a l'aide en ligne.</p>
 
@@ -157,7 +157,7 @@ l'utilisateur manuellement.</p>
 
 <p><strong>apt-get</strong> <em>update</em></p>
 
-<h4>Mettre à jour son système</h4>
+<h4>Mettre à jour les paquets déjà installé</h4>
 
 <p><strong>apt-get</strong> <em>upgrade</em></p>
 
@@ -182,6 +182,14 @@ l'utilisateur manuellement.</p>
 <h4>Afficher la liste des paquets installés</h4>
 
 <p><strong>dpkg</strong> --get-selections | less</p>
+
+<h4>Recherche d'une chaînes de caractères «chaine» dans les paquets connus.</h4>
+
+<p><strong>apt-cache</strong> search chaîne</p>
+
+<h4>Recherche d'une chaînes de caractères «chaine» dans le nom d'un paquet.</h4>
+
+<p><strong>apt-cache</strong> showpkg chaîne</p>
 
 <h2>Opération sur le réseau.</h2>
 

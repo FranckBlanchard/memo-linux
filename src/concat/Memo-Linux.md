@@ -97,7 +97,7 @@ Les options varient en fonction des informations a modifier, consulter le manuel
 
 **apt-get** *update*
 
-#### Mettre à jour son système
+#### Mettre à jour les paquets déjà installé
 
 **apt-get** *upgrade*
 
@@ -122,6 +122,14 @@ Pour supprimer les fichiers de configuration.
 #### Afficher la liste des paquets installés
 
 **dpkg** --get-selections | less
+
+#### Recherche d'une chaînes de caractères «chaine» dans les paquets connus.
+
+**apt-cache** search chaîne
+
+#### Recherche d'une chaînes de caractères «chaine» dans le nom d'un paquet.
+
+**apt-cache** showpkg chaîne
 ## Opération sur le réseau.
 ### Carte réseau
 **ifconfig** permet de gérer les cartes réseaux.
