@@ -15,7 +15,7 @@ Affiche la table de routage du noyau.
 
 Vérifie 10 fois si un client réseau est disponible.
 
-**Note :** attention le client peut être configurer pour ne pas répondre a un ping
+**Note :** attention le client peut être configurer pour ne pas répondre à un ping
 
 **ping** *-c 10*  google.ca
 
@@ -27,6 +27,6 @@ Affiche la correspondance entre *adresse ip* et *mac adresse*
 
 **arp** *-an*
 
-Affiche les connexions ainsi que les processus correspondant. La commande **netstat** possède beaucoup d'options, voir la documentation en ligne.
+Affiche les connexions ainsi que les processus correspondants. La commande **netstat** possède beaucoup d'options, voir la documentation en ligne.
 
 **netstat** *-nap*

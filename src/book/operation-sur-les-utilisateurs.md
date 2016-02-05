@@ -23,6 +23,6 @@ l'utilisateur manuellement.
 
 ###Modifier un compte utilisateur
 
-Les options varient en fonction des informations a modifier, consulter le manuel avant son utilisation.
+Les options varient en fonction des informations à modifier, consulter le manuel avant son utilisation.
 
 **usermod** *[option]* identifiant

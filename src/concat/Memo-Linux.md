@@ -1,10 +1,10 @@
 
-Pour obtenir plus d'information sur une commande, se référer aux pages du manuel de celle-ci, ou a l'aide en ligne.
+Pour obtenir plus d'information sur une commande, se référer aux pages du manuel de celle-ci, ou à l'aide en ligne.
 
 ## Pour obtenir de d'information sur une commande
 **man** commande
 
-Pour la majoritée des commandes il est possible d'afficher de l'aide directement depuis la commande en faisant:
+Pour la majorité des commandes il est possible d'afficher de l'aide directement depuis la commande en faisant:
 
 **commande** *--help*
 ##Opération sur les fichiers.
@@ -88,7 +88,7 @@ l'utilisateur manuellement.
 
 ###Modifier un compte utilisateur
 
-Les options varient en fonction des informations a modifier, consulter le manuel avant son utilisation.
+Les options varient en fonction des informations à modifier, consulter le manuel avant son utilisation.
 
 **usermod** *[option]* identifiant
 ## Opération sur le système
@@ -147,7 +147,7 @@ Affiche la table de routage du noyau.
 
 Vérifie 10 fois si un client réseau est disponible.
 
-**Note :** attention le client peut être configurer pour ne pas répondre a un ping
+**Note :** attention le client peut être configurer pour ne pas répondre à un ping
 
 **ping** *-c 10*  google.ca
 
@@ -159,12 +159,12 @@ Affiche la correspondance entre *adresse ip* et *mac adresse*
 
 **arp** *-an*
 
-Affiche les connexions ainsi que les processus correspondant. La commande **netstat** possède beaucoup d'options, voir la documentation en ligne.
+Affiche les connexions ainsi que les processus correspondants. La commande **netstat** possède beaucoup d'options, voir la documentation en ligne.
 
 **netstat** *-nap*
 ## Copyright et license
 
-Memo-Linux Copyright (c) 2015 Franck Blanchard
+Memo-Linux Copyright (c) 2015-216 Franck Blanchard
 
 All rights reserved.
 
