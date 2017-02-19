@@ -13,7 +13,7 @@ Le but est de fournir différents formats numériques.
 Tous les formats numériques disponibles se trouvent dans le répertoire *build*, chaques formats a un répertoire dont le nom lui correspond. 
 ## Copyright et license
 
-Memo-Linux Copyright (c) 2015-216 Franck Blanchard
+Memo-Linux Copyright (c) 2015-2017 Franck Blanchard
 
 All rights reserved.
 
