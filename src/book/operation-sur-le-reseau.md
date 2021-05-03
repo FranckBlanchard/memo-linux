@@ -30,3 +30,13 @@ Affiche la correspondance entre *adresse ip* et *mac adresse*
 Affiche les connexions ainsi que les processus correspondants. La commande **netstat** possède beaucoup d'options, voir la documentation en ligne.
 
 **netstat** *-nap*
+
+### Connexion à distance.
+
+**ssh** *login@domaine.com*
+
+Se connecter sur la machine a l'adresse **domaine.com**.
+
+**ssh-keygen** *-t rsa* *-b 4096*
+
+Génère une paire de clé, privé et public.
