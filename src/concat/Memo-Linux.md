@@ -164,7 +164,7 @@ Affiche les connexions ainsi que les processus correspondants. La commande **net
 **netstat** *-nap*
 ## Copyright et license
 
-Memo-Linux Copyright (c) 2015-2017 Franck Blanchard
+Memo-Linux Copyright (c) 2015-2021 Franck Blanchard
 
 All rights reserved.
 

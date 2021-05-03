@@ -10,15 +10,15 @@
     <target name="concatMardown" description="Création du fichier Memo-linux.md">
         <echo message="Création du fichier Memo-linux.md"/>
         <concat destfile="${source}/concat/${bookname}.md">
-            <filelist >
-                <file name="src/book/introduction.md"/>
-                <file name="src/book/operation-sur-les-fichiers.md"/>
-                <file name="src/book/operation-sur-les-repertoires.md"/>
-                <file name="src/book/operation-sur-les-archives.md"/>
-                <file name="src/book/operation-sur-les-utilisateurs.md"/>
-                <file name="src/book/operation-sur-le-systeme.md"/>
-                <file name="src/book/operation-sur-le-reseau.md"/>
-                <file name="src/book/copyright.md"/>
+            <filelist dir="${source}/book">
+                <file name="introduction.md"/>
+                <file name="operation-sur-les-fichiers.md"/>
+                <file name="operation-sur-les-repertoires.md"/>
+                <file name="operation-sur-les-archives.md"/>
+                <file name="operation-sur-les-utilisateurs.md"/>
+                <file name="operation-sur-le-systeme.md"/>
+                <file name="operation-sur-le-reseau.md"/>
+                <file name="copyright.md"/>
             </filelist>
         </concat>
     </target>
