@@ -39,7 +39,7 @@ Affiche les connexions ainsi que les processus correspondants. La commande **net
 
 ### Connexion à distance.
 
-Se connecter sur la machine a l'adresse **domaine.com**.
+Se connecter sur la machine à l'adresse **domaine.com**.
 
 **ssh** *login@domaine.com*
 

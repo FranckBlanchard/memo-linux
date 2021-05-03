@@ -136,21 +136,21 @@ Les options varient en fonction des informations à modifier, consulter le manue
 
 ### Système **Debian** et dérivé
 
-#### Mettre à jour la liste des paquets disponibles
+Mettre à jour la liste des paquets disponibles
 
 **apt-get** *update*
 
-#### Mettre à jour les paquets déjà installé
+Mettre à jour les paquets déjà installé
 
 **apt-get** *upgrade*
 
-#### Installation d'un paquet
+Installation d'un paquet
 
 **apt-get** *install* paquet
 
 **dpkg** *-i* paquet
 
-#### Déinstallation d'un paquet
+Déinstallation d'un paquet
 
 **apt-get** *remove* paquet
 
@@ -162,15 +162,15 @@ Pour supprimer les fichiers de configuration.
 
 **dpkg** *-P* paquet
 
-#### Afficher la liste des paquets installés
+Afficher la liste des paquets installés
 
 **dpkg** --get-selections | less
 
-#### Recherche d'une chaînes de caractères «chaine» dans les paquets connus.
+Recherche d'une chaînes de caractères «chaine» dans les paquets connus.
 
 **apt-cache** search chaîne
 
-#### Recherche d'une chaînes de caractères «chaine» dans le nom d'un paquet.
+Recherche d'une chaînes de caractères «chaine» dans le nom d'un paquet.
 
 **apt-cache** showpkg chaîne
 
@@ -214,7 +214,7 @@ Affiche les connexions ainsi que les processus correspondants. La commande **net
 
 ### Connexion à distance.
 
-Se connecter sur la machine a l'adresse **domaine.com**.
+Se connecter sur la machine à l'adresse **domaine.com**.
 
 **ssh** *login@domaine.com*
 
