@@ -8,7 +8,7 @@
         <antcall target="readme"></antcall>
     </target>
     <target name="concatMardown" description="Création du fichier Memo-linux.md">
-        <echo message="Création du fichier Memo-linux.md"/>
+        <echo message="Création du fichier ${bookname}.md"/>
         <concat destfile="${source}/concat/${bookname}.md">
             <filelist dir="${source}/book">
                 <file name="introduction.md"/>

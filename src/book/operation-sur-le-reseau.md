@@ -33,10 +33,10 @@ Affiche les connexions ainsi que les processus correspondants. La commande **net
 
 ### Connexion à distance.
 
-**ssh** *login@domaine.com*
-
 Se connecter sur la machine a l'adresse **domaine.com**.
 
-**ssh-keygen** *-t rsa* *-b 4096*
+**ssh** *login@domaine.com*
 
 Génère une paire de clé, privé et public.
+
+**ssh-keygen** *-t rsa* *-b 4096*
