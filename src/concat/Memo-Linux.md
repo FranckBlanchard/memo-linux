@@ -7,47 +7,69 @@ Pour obtenir plus d'information sur une commande, se référer aux pages du manu
 Pour la majorité des commandes il est possible d'afficher de l'aide directement depuis la commande en faisant:
 
 **commande** *--help*
-##Opération sur les fichiers.
-###Créer un fichier.
+
+## Opération sur les fichiers.
+
+### Créer un fichier.
 **touch** fichier
-###Supprimer un fichier.
+### Supprimer un fichier.
 **rm** fichier
-###Copier un fichier.
+### Copier un fichier.
 **cp** fichier1 fichier2
-###Afficher un fichier.
+### Afficher un fichier.
 **cat** fichier
-###Afficher un fichier avec un pager
+### Afficher un fichier avec un pager
 **less** fichier
 **more** fichier
-###Afficher les *n* premières lignes d'un fichier
+### Afficher les *n* premières lignes d'un fichier
 **head** *-n* fichier
-###Afficher les *n* dernières lignes d'un fichier
+### Afficher les *n* dernières lignes d'un fichier
 **tail** *-n* fichier
-###Renommer ou déplacer un fichier
+### Renommer ou déplacer un fichier
 **mv** source destination
-##Opération sur les répertoires
-###Créer un répertoire
+## Opération sur les répertoires
+
+### Créer un répertoire
+
 **mkdir** répertoire
-###Effacer un répertoire vide
+
+### Effacer un répertoire vide
 **rmdir** répertoire
-###Effacer un répertoire de façon récurçive
+
+### Effacer un répertoire de façon récurçive
+
 **rm** *-r* répertoire
-###Afficher les fichiers du répertoire courant
+
+### Afficher les fichiers du répertoire courant
+
 **ls**
-###Afficher les fichiers du répertoire courant au format long
+
+### Afficher les fichiers du répertoire courant au format long
+
 **ls** *-l*
-###Afficher les fichiers du répertoire courant au format long ainsi que les fichiers cachés
+
+### Afficher les fichiers du répertoire courant au format long ainsi que les fichiers cachés
+
 **ls** *-la*
-###Afficher le répertoire courant
+
+### Afficher le répertoire courant
 **pwd**
-###Changer de répertoire
+
+### Changer de répertoire
+
 **cd** repertoire
-###Se positionner dans le répertoire parent
+
+### Se positionner dans le répertoire parent
+
 **cd** ..
-###Se positionner à la racine du répertoire de l'utilisateur courant
+### Se positionner à la racine du répertoire de l'utilisateur courant
+
 **cd** ~
-###Changer  
+
+###Changer
+
 ###Renommer ou déplacer un répertoire
+
 **mv** source destination
 ##Opération sur les archives.
 ###Créer une archive avec tar
@@ -163,7 +185,7 @@ Affiche les connexions ainsi que les processus correspondants. La commande **net
 
 **netstat** *-nap*
 
-### Connexion à distance.
+### Connexion à distance. 
 
 Se connecter sur la machine a l'adresse **domaine.com**.
 
