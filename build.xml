@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<project name="memo-linux" default="all">
+    <property file="build.properties"/>
+    <target name="all">
+        <antcall target="concatMardown"></antcall>
+        <antcall target="makeHtml"></antcall>
+        <antcall target="makePdf"></antcall>
+        <antcall target="readme"></antcall>
+    </target>
+    <target name="concatMardown" description="Création du fichier Memo-linux.md">
+        <echo message="Création du fichier Memo-linux.md"/>
+        <concat destfile="${source}/concat/${bookname}.md">
+            <filelist >
+                <file name="src/book/introduction.md"/>
+                <file name="src/book/operation-sur-les-fichiers.md"/>
+                <file name="src/book/operation-sur-les-repertoires.md"/>
+                <file name="src/book/operation-sur-les-archives.md"/>
+                <file name="src/book/operation-sur-les-utilisateurs.md"/>
+                <file name="src/book/operation-sur-le-systeme.md"/>
+                <file name="src/book/operation-sur-le-reseau.md"/>
+                <file name="src/book/copyright.md"/>
+            </filelist>
+        </concat>
+    </target>
+    <target name="makeHtml" description="Création du fichier html build/html/memo-linux.md">
+        <echo message="Création du fichier Memo-linux au format html"/>
+        <exec executable="php">
+            <arg value="app/makeBookHtml.php"/>
+        </exec>
+    </target>
+    <target name="makePdf" description="Création du fichier pdf build/pdf/memo-linux.pdf">
+        <echo message="Création du fichier Memo-linux au format pdf"/>
+        <exec executable="php">
+            <arg value="app/makeBookPdf.php"/>
+        </exec>
+    </target>
+    <target name="readme">
+        <echo message="Création du Fichier README.md"/>
+        <concat destfile="README.md">
+            <filelist dir="${source}/readme">
+                <file name="readme-header.md"/>
+                <file name="copyright.md"/>
+            </filelist>
+        </concat>
+    </target>
+
+</project>
