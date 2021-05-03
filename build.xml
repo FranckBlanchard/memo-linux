@@ -6,6 +6,7 @@
         <antcall target="makeHtml"></antcall>
         <antcall target="makePdf"></antcall>
         <antcall target="readme"></antcall>
+        <antcall target="status"></antcall>
     </target>
     <target name="concatMardown" description="Création du fichier Memo-linux.md">
         <echo message="Création du fichier ${bookname}.md"/>
@@ -42,6 +43,18 @@
                 <file name="copyright.md"/>
             </filelist>
         </concat>
+    </target>
+    <target name="status" description="Déclenche un git status.">
+        <echo message="Status du dépot local."/>
+        <exec executable="git">
+            <arg value="status"/>
+        </exec>
+    </target>
+    <target name="push" description="Déclenche un git push.">
+        <echo message="Mise a jour du dépot distant"/>
+        <exec executable="git">
+            <arg value="push"/>
+        </exec>
     </target>
 
 </project>

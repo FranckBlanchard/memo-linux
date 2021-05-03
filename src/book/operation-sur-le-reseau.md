@@ -31,7 +31,7 @@ Affiche les connexions ainsi que les processus correspondants. La commande **net
 
 **netstat** *-nap*
 
-### Connexion à distance.
+### Connexion à distance. 
 
 Se connecter sur la machine a l'adresse **domaine.com**.
 
