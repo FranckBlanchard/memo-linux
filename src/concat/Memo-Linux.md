@@ -2,6 +2,7 @@
 Pour obtenir plus d'information sur une commande, se référer aux pages du manuel de celle-ci, ou à l'aide en ligne.
 
 ## Pour obtenir de d'information sur une commande
+
 **man** commande
 
 Pour la majorité des commandes il est possible d'afficher de l'aide directement depuis la commande en faisant:
@@ -11,21 +12,37 @@ Pour la majorité des commandes il est possible d'afficher de l'aide directement
 ## Opération sur les fichiers.
 
 ### Créer un fichier.
+
 **touch** fichier
+
 ### Supprimer un fichier.
+
 **rm** fichier
+
 ### Copier un fichier.
+
 **cp** fichier1 fichier2
+
 ### Afficher un fichier.
+
 **cat** fichier
+
 ### Afficher un fichier avec un pager
+
 **less** fichier
+
 **more** fichier
+
 ### Afficher les *n* premières lignes d'un fichier
+
 **head** *-n* fichier
+
 ### Afficher les *n* dernières lignes d'un fichier
+
 **tail** *-n* fichier
+
 ### Renommer ou déplacer un fichier
+
 **mv** source destination
 ## Opération sur les répertoires
 
@@ -66,55 +83,59 @@ Pour la majorité des commandes il est possible d'afficher de l'aide directement
 
 **cd** ~
 
-###Changer
-
-###Renommer ou déplacer un répertoire
+### Renommer ou déplacer un répertoire
 
 **mv** source destination
-##Opération sur les archives.
-###Créer une archive avec tar
+
+## Opération sur les archives.
+
+### Créer une archive avec tar
 
 Créer l'archive compréssé *archive.tar.gz* en utilisant le programme gzip, de tous les fichiers contenus dans le répertoire *documents*.
 
 **tar** *-zcvf*  archive.tar.gz  /documents
 
-###Afficher le contenu d'une archive créé avec *tar*.
+### Afficher le contenu d'une archive créé avec *tar*.
 
 **tar** *-ztvf* archive.tar.gz
 
-###Extraire les fichiers d'une archive créé avec *tar*.
+### Extraire les fichiers d'une archive créé avec *tar*.
 
 **tar** *-xzvf* archive.tar.gz
-##Opération sur les Utilisateurs
+
+## Opération sur les Utilisateurs
 
 Les commandes suivantes doivent être invoquées avec les droits d'administration.
 
-###Ajouter un compte utilisateur
+### Ajouter un compte utilisateur
 
 Il est impératif de consulter le manuel pour les options.
 
 **useradd** *[option]* identifiant
 
-###Supprimer un compte utilisateur
+### Supprimer un compte utilisateur
 
 **userdel** utilisateur
 
-###Supprimer un compte utilisateur et son répertoire personel
+### Supprimer un compte utilisateur et son répertoire personel
 
 **userdel** *-r* utilisateur
 
-####Note
+#### Note
 
 Le fichier */etc/group* ne sera pas modifié, il faut supprimer les entrées concernant
 l'utilisateur manuellement.
 
-###Modifier un compte utilisateur
+### Modifier un compte utilisateur
 
 Les options varient en fonction des informations à modifier, consulter le manuel avant son utilisation.
 
 **usermod** *[option]* identifiant
+
 ## Opération sur le système
+
 ### Système **Debian** et dérivé
+
 #### Mettre à jour la liste des paquets disponibles
 
 **apt-get** *update*
@@ -152,19 +173,25 @@ Pour supprimer les fichiers de configuration.
 #### Recherche d'une chaînes de caractères «chaine» dans le nom d'un paquet.
 
 **apt-cache** showpkg chaîne
+
 ## Opération sur le réseau.
+
 ### Carte réseau
+
 **ifconfig** permet de gérer les cartes réseaux.
 
 Afficher les cartes réseaux disponibles.
 
 **ifconfig**
+
 ### Les routes.
+
 La commande **route** permet de gérer les routes du noyau.
 
 Affiche la table de routage du noyau.
 
 **route**
+
 ### Tester le réseau.
 
 Vérifie 10 fois si un client réseau est disponible.
@@ -185,7 +212,7 @@ Affiche les connexions ainsi que les processus correspondants. La commande **net
 
 **netstat** *-nap*
 
-### Connexion à distance. 
+### Connexion à distance.
 
 Se connecter sur la machine a l'adresse **domaine.com**.
 

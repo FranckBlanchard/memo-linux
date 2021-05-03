@@ -37,8 +37,6 @@
 
 **cd** ~
 
-###Changer
-
-###Renommer ou déplacer un répertoire
+### Renommer ou déplacer un répertoire
 
 **mv** source destination

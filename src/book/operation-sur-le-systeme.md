@@ -1,5 +1,8 @@
+
 ## Opération sur le système
+
 ### Système **Debian** et dérivé
+
 #### Mettre à jour la liste des paquets disponibles
 
 **apt-get** *update*

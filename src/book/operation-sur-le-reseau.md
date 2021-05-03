@@ -1,16 +1,22 @@
+
 ## Opération sur le réseau.
+
 ### Carte réseau
+
 **ifconfig** permet de gérer les cartes réseaux.
 
 Afficher les cartes réseaux disponibles.
 
 **ifconfig**
+
 ### Les routes.
+
 La commande **route** permet de gérer les routes du noyau.
 
 Affiche la table de routage du noyau.
 
 **route**
+
 ### Tester le réseau.
 
 Vérifie 10 fois si un client réseau est disponible.
@@ -31,7 +37,7 @@ Affiche les connexions ainsi que les processus correspondants. La commande **net
 
 **netstat** *-nap*
 
-### Connexion à distance. 
+### Connexion à distance.
 
 Se connecter sur la machine a l'adresse **domaine.com**.
 
