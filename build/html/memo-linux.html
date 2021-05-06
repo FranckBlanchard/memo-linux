@@ -9,7 +9,7 @@
     </head>
     <body>
         <h1>Memo Linux</h1>
-        <p>Date de compilation du document: 2021-05-03 12:57:55.</p>
+        <p>Date de compilation du document: 2021-05-06 09:32:29.</p>
         <p>La dernière version du document peut être trouvée a l'adresse suivante : <a href="https://github.com/FranckBlanchard/Memo-linux" target="_blank">https://github.com/FranckBlanchard/Memo-linux</a></p>            
         <p>Pour obtenir plus d'information sur une commande, se référer aux pages du manuel de celle-ci, ou à l'aide en ligne.</p>
 
@@ -186,7 +186,7 @@ l'utilisateur manuellement.</p>
 
 <p><strong>apt-cache</strong> search chaîne</p>
 
-<p>Recherche d'une chaînes de caractères «chaine» dans le nom d'un paquet.</p>
+<p>Recherche d'une chaînes de caractères «chaîne» dans le nom d'un paquet.</p>
 
 <p><strong>apt-cache</strong> showpkg chaîne</p>
 
@@ -230,13 +230,22 @@ l'utilisateur manuellement.</p>
 
 <h3>Connexion à distance.</h3>
 
-<p>Se connecter sur la machine à l'adresse <strong>domaine.com</strong>.</p>
+<p>SSH (Secure shell) est un protocole de communication sécurisé basé sur un système de clés. C'est aussi un programme, qui va permetre d'ouvrir un terminal sur une machine distante.
+Son installion vient avec d'autres programmes pour notamment générer les clés, les copier etc...</p>
 
-<p><strong>ssh</strong> <em>login@domaine.com</em></p>
+<p>Se connecter sur la machine à l'adresse <strong>domaine.com</strong></p>
 
-<p>Génère une paire de clé, privé et public.</p>
+<p><strong>ssh</strong> <em>login@domaine.com</em> ou <strong>ssh</strong> <em>login@172.217.13.110</em></p>
+
+<p>Génère une paire de clé, privé et public.
+Le programme vous demandera une passphrase pour sécuriser les clés.
+Il vous demandera aussi le nom des clés a générer.Il faut indiquer le chemin complet ainsi que le nom.
+Habituellement on les sauvegarde dans <em>/home/user/.ssh/nom<em>de</em>la_cle</em>.</p>
 
 <p><strong>ssh-keygen</strong> <em>-t rsa</em> <em>-b 4096</em></p>
+
+<p><strong>Backup</strong>
+rsync -avz -e "ssh -p 22" utilisateur@serveur2:/chemin/source/ /chemin/destination/</p>
 
 <h2>Copyright et license</h2>
 

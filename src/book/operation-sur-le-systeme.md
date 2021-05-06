@@ -37,6 +37,6 @@ Recherche d'une chaînes de caractères «chaine» dans les paquets connus.
 
 **apt-cache** search chaîne
 
-Recherche d'une chaînes de caractères «chaine» dans le nom d'un paquet.
+ Recherche d'une chaînes de caractères «chaîne» dans le nom d'un paquet.
 
 **apt-cache** showpkg chaîne

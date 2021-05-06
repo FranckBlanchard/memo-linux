@@ -170,7 +170,7 @@ Recherche d'une chaînes de caractères «chaine» dans les paquets connus.
 
 **apt-cache** search chaîne
 
-Recherche d'une chaînes de caractères «chaine» dans le nom d'un paquet.
+ Recherche d'une chaînes de caractères «chaîne» dans le nom d'un paquet.
 
 **apt-cache** showpkg chaîne
 
@@ -214,13 +214,22 @@ Affiche les connexions ainsi que les processus correspondants. La commande **net
 
 ### Connexion à distance.
 
-Se connecter sur la machine à l'adresse **domaine.com**.
+SSH (Secure shell) est un protocole de communication sécurisé basé sur un système de clés. C'est aussi un programme, qui va permetre d'ouvrir un terminal sur une machine distante.
+Son installion vient avec d'autres programmes pour notamment générer les clés, les copier etc...
 
-**ssh** *login@domaine.com*
+Se connecter sur la machine à l'adresse **domaine.com**
+
+**ssh** *login@domaine.com* ou **ssh** *login@172.217.13.110*
 
 Génère une paire de clé, privé et public.
+Le programme vous demandera une passphrase pour sécuriser les clés.
+Il vous demandera aussi le nom des clés a générer.Il faut indiquer le chemin complet ainsi que le nom.
+Habituellement on les sauvegarde dans */home/user/.ssh/nom_de_la_cle*.
 
 **ssh-keygen** *-t rsa* *-b 4096*
+
+**Backup**
+rsync -avz -e "ssh -p 22" utilisateur@serveur2:/chemin/source/ /chemin/destination/
 
 ## Copyright et license
 
