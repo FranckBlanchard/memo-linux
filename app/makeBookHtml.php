@@ -2,7 +2,7 @@
 
 /**
  * makeBookHtml.php
- *  
+ *
  */
 use \Michelf\Markdown;
 
@@ -16,6 +16,10 @@ $mdFile = __DIR__ . "/../src/concat/Memo-Linux.md";
 // Fichier html a créer
 $htmlFile = __DIR__ . "/../build/html/memo-linux.html";
 // Iniatilisation de la variable $mdContent avec le contenu du fichier a transformer
+/**
+ * @var string $mdContent Contenu du fichier concatené.
+ */
+$mdContent = '';
 if (file_exists($mdFile)) {
     $mdContent = file_get_contents($mdFile);
 } else {

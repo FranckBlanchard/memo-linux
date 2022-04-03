@@ -9,7 +9,7 @@
     </head>
     <body>
         <h1>Memo Linux</h1>
-        <p>Date de compilation du document: 2022-04-02 22:51:08.</p>
+        <p>Date de compilation du document: 2022-04-03 12:13:20.</p>
         <p>La dernière version du document peut être trouvée a l'adresse suivante : <a href="https://github.com/FranckBlanchard/Memo-linux" target="_blank">https://github.com/FranckBlanchard/Memo-linux</a></p>            
         <p>Pour obtenir plus d'information sur une commande, se référer aux pages du manuel de celle-ci, ou à l'aide en ligne.</p>
 
@@ -189,6 +189,63 @@ l'utilisateur manuellement.</p>
 <p>Recherche d'une chaînes de caractères «chaîne» dans le nom d'un paquet.</p>
 
 <p><strong>apt-cache</strong> showpkg chaîne</p>
+
+<h2>Opération sur le réseau.</h2>
+
+<h3>Carte réseau</h3>
+
+<p><strong>ifconfig</strong> permet de gérer les cartes réseaux.</p>
+
+<p>Afficher les cartes réseaux disponibles.</p>
+
+<p><strong>ifconfig</strong></p>
+
+<h3>Les routes.</h3>
+
+<p>La commande <strong>route</strong> permet de gérer les routes du noyau.</p>
+
+<p>Affiche la table de routage du noyau.</p>
+
+<p><strong>route</strong></p>
+
+<h3>Tester le réseau.</h3>
+
+<p>Vérifie 10 fois si un client réseau est disponible.</p>
+
+<p><strong>Note :</strong> attention le client peut être configurer pour ne pas répondre à un ping</p>
+
+<p><strong>ping</strong> <em>-c 10</em>  google.ca</p>
+
+<p>Affiche la route d'un paquet pour arriver a une adresse.</p>
+
+<p><strong>traceroute</strong>  google.com</p>
+
+<p>Affiche la correspondance entre <em>adresse ip</em> et <em>mac adresse</em></p>
+
+<p><strong>arp</strong> <em>-an</em></p>
+
+<p>Affiche les connexions ainsi que les processus correspondants. La commande <strong>netstat</strong> possède beaucoup d'options, voir la documentation en ligne.</p>
+
+<p><strong>netstat</strong> <em>-nap</em></p>
+
+<h3>Connexion à distance.</h3>
+
+<p>SSH (Secure shell) est un protocole de communication sécurisé basé sur un système de clés. C'est aussi un programme, qui va permetre d'ouvrir un terminal sur une machine distante.
+Son installion vient avec d'autres programmes pour notamment générer les clés, les copier etc...</p>
+
+<p>Se connecter sur la machine à l'adresse <strong>domaine.com</strong></p>
+
+<p><strong>ssh</strong> <em>login@domaine.com</em> ou <strong>ssh</strong> <em>login@172.217.13.110</em></p>
+
+<p>Génère une paire de clé, privé et public.
+Le programme vous demandera une passphrase pour sécuriser les clés.
+Il vous demandera aussi le nom des clés a générer. Il faut indiquer le chemin complet ainsi que le nom.
+Habituellement on les sauvegarde dans <em>/home/user/.ssh/nom_de_la_cle</em> .</p>
+
+<p><strong>ssh-keygen</strong> <em>-t rsa</em> <em>-b 4096</em></p>
+
+<p><strong>Backup</strong>
+rsync -avz -e "ssh -p 22" utilisateur@serveur2:/chemin/source/ /chemin/destination/</p>
 
 <h2>Copyright et license</h2>
 
